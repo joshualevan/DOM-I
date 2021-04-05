@@ -45,12 +45,21 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 const nav = document.querySelector('header nav');
 const navContent = siteContent["nav"];
 
+const gallery = document.createElement('a');
+gallery.href = "#";
+gallery.textContent = "Gallery";
+const merch = document.createElement('a');
+merch.href = "#";
+merch.textContent = "Merch";
+
 nav.querySelector('a:nth-child(1)').textContent = navContent["nav-item-1"];
 nav.querySelector('a:nth-child(2)').textContent = navContent["nav-item-2"];
 nav.querySelector('a:nth-child(3)').textContent = navContent["nav-item-3"];
 nav.querySelector('a:nth-child(4)').textContent = navContent["nav-item-4"];
 nav.querySelector('a:nth-child(5)').textContent = navContent["nav-item-5"];
-nav.querySelector('a:nth-child(6)').textContent = navContent["nav-item-6"];
+nav.querySelector('a:nth-child(5)').textContent = navContent["nav-item-6"];
+nav.appendChild(gallery);
+nav.prepend(merch)
 
 // CTA
 const cta = document.querySelector('.cta-text');
@@ -76,6 +85,7 @@ document.querySelector(".bottom-content .text-content:nth-child(2) h4").textCont
 document.querySelector(".bottom-content .text-content:nth-child(2) p").textContent = siteContent["main-content"]["product-content"];
 document.querySelector(".bottom-content .text-content:nth-child(3) h4").textContent = siteContent["main-content"]["vision-h4"];
 document.querySelector(".bottom-content .text-content:nth-child(3) p").textContent = siteContent["main-content"]["vision-content"];
+
 
 //Contact
 const addressSplit = siteContent["contact"]["address"].split(" ");
