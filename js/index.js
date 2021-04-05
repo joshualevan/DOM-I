@@ -50,3 +50,9 @@ nav.querySelector('a:nth-child(3)').textContent = navContent["nav-item-3"];
 nav.querySelector('a:nth-child(4)').textContent = navContent["nav-item-4"];
 nav.querySelector('a:nth-child(5)').textContent = navContent["nav-item-5"];
 nav.querySelector('a:nth-child(6)').textContent = navContent["nav-item-6"];
+
+const cta = document.querySelector('.cta-text');
+const ctaContent = siteContent["cta"];
+
+
+cta.querySelector("h1").textContent = ctaContent["h1"];
