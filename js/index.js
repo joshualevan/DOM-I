@@ -61,6 +61,11 @@ nav.querySelector('a:nth-child(5)').textContent = navContent["nav-item-6"];
 nav.appendChild(gallery);
 nav.prepend(merch)
 
+let anchors = document.querySelectorAll('a')
+for (let i = 0; i < anchors.length; i++) {
+  anchors[i].style.color = "green"
+}
+
 // CTA
 const cta = document.querySelector('.cta-text');
 const ctaContent = siteContent["cta"];
