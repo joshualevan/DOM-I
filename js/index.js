@@ -53,6 +53,7 @@ nav.querySelector('a:nth-child(6)').textContent = navContent["nav-item-6"];
 
 const cta = document.querySelector('.cta-text');
 const ctaContent = siteContent["cta"];
+  const heading = ctaContent["h1"].split(" ").join("<br>");
 
 
-cta.querySelector("h1").textContent = ctaContent["h1"];
+cta.querySelector("h1").innerHTML = heading;
