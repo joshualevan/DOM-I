@@ -57,3 +57,4 @@ const ctaContent = siteContent["cta"];
 
 
 cta.querySelector("h1").innerHTML = heading;
+cta.querySelector("button").textContent = ctaContent["button"];
